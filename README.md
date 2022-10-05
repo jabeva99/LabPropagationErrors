@@ -43,7 +43,7 @@ python labpropagationerrors
 If you want the .exe version for Windows, just go to the Releases tab and download the .zip file
 
 
-### Intructions
+## Intructions
 
 This is a very simple program so we need to be careful with our inputs. I'll be as clear as possible on each input. It is very important to note that everything is case sensitive.
 
