@@ -2,7 +2,7 @@
 
 This is a simple Python Script I wrote with the purpose of calculating the error of indirect measures after taking direct values experimentally.
 
- ##Description
+ ## Description
  
  After 4 long years of deriving long functions by hand only to get a longer function and have to enter it in an excel column, I finally decided to break the circle and end the misery of my fellow physics undergrads who will need to deal with work. 
  
