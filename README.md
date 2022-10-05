@@ -1,4 +1,4 @@
-# Gaussian Error Calculator
+# Labpropagationerrors
 
 This is a simple Python Script I wrote with the purpose of calculating the error of indirect measures after taking direct values experimentally.
 
