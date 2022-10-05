@@ -18,15 +18,15 @@ This is a simple Python Script I wrote with the purpose of calculating the error
  
  If we are using the python script and not the .exe on Windows, we must fulfill a few dependencies, which are the python libraries used in the script. These are:
  
-*Numpy 
+* Numpy 
 
-*Sympy
+* Sympy
 
-*Tkinter
+* Tkinter
 
-*Pandas
+* Pandas
 
-##Installing
+## Installing
 
 For the Python script, we can download the script with 
 
