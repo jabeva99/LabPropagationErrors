@@ -6,7 +6,7 @@ This is a simple Python Script I wrote with the purpose of calculating the error
  
  After 4 long years of deriving long functions by hand only to get a longer function and have to enter it in an excel column, I finally decided to break the circle and end the misery of my fellow physics undergrads who will need to deal with work. 
  
- The current Script loads an excel file with the measure for several variables and asks you to input the expression of the function and the name of variables. After that, it will apply the general method of propagating errors. This is getting the differential of the function so we can obtain the standard deviation of the function
+ The current Script loads an excel file with the measure for several variables and asks you to input the expression of the function and the name of variables. After that, it will apply the general method of propagating errors. This is getting the differential of the function so we can obtain the standard deviation of the function. Is output is a file which contains two new columns, the value of the function and its error.
  
  
  ## Why use the standard deviation as the error of the function.
