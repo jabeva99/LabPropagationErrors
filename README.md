@@ -76,7 +76,9 @@ Here, we input the expression of the function of the indirect measurement. It is
 
 Quite simple, currently it only supports csv and excel, this selector will decide if reading an excel or an csv as well as decide the output file the same way.
 
+## Output
 
+The output is a file which is the same as the input but with a new column which is the error of the function.
 
 
 
