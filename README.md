@@ -67,6 +67,8 @@ Here, we input the same name of the variable that we are going to input on the f
 
 Here, we input the expression of the function of the indirect measurement. It is very important that we input the function following the python syntax, which is nothing especial but replacing ^ with ** (example x squared would be x**2).
 
+Also, when using a certain function like the arcotangent, we need to use the syntax of sympy, since it its the package used for the derivations. They are quite intuitive, for further information check https://docs.sympy.org/latest/modules/functions/index.html
+
 
 
 
