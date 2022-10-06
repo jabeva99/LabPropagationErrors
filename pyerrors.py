@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import filedialog,Text
+from tkinter import filedialog,Text,messagebox,ttk
 import os
 import sympy as sym
 import numpy as np
@@ -9,9 +9,9 @@ import math as mt
 loc=""
 vars=[]
 func=""
-
+seleccion=""
 root=tk.Tk()
-canvas=tk.Canvas(root,height=350,width=900,bg="#263D42")
+canvas=tk.Canvas(root,height=550,width=900,bg="#263D42")
 canvas.pack()
 
 
@@ -32,7 +32,7 @@ canvas.create_window(700,50,window=entryvar)
 def getvars():
     global vars
     vars.append(sym.Symbol(entryvar.get()))
-    print(loc)
+
     entryvar.delete(0,tk.END)
 buttonvar=tk.Button(root, height=1, width=15, text="Añadir variable", command=lambda:getvars())
 
@@ -41,7 +41,7 @@ canvas.create_window(700,100,window=buttonvar)
 
 
 entryfunc=tk.Entry(root)
-canvas.create_window(300,200,width=400,window=entryfunc)
+canvas.create_window(300,250,width=400,window=entryfunc)
 #entryfunc.pack()
 def getfunc():
     global func
@@ -50,7 +50,7 @@ def getfunc():
 
 buttonfunc=tk.Button(root, height=1, width=15, text="Añadir funcion", command=lambda:getfunc())
 
-canvas.create_window(300,250,window=buttonfunc)
+canvas.create_window(300,300,window=buttonfunc)
 
 
 
@@ -58,8 +58,22 @@ canvas.create_window(300,250,window=buttonfunc)
 
 
 
+combo=ttk.Combobox(state="readonly")
+
+opciones=["csv","excel"]
+def lista_selec():
+    global seleccion
+    seleccion=combo.get()
+    print(seleccion)
+
+canvas.create_window(700,250,window=combo)
 
 
+combo['values']=opciones
+
+buttonfich=tk.Button(root, height=1, width=15, text="Añadir formato", command=lista_selec)
+
+canvas.create_window(700,300,window=buttonfich)
 
 
 def execute():
@@ -71,7 +85,7 @@ def execute():
 
 # Button for execute
 exit_button = tk.Button(root, text="Ejecutar", command=execute)
-canvas.create_window(700,250,window=exit_button)
+canvas.create_window(450,450,window=exit_button)
 
 
 
@@ -82,11 +96,20 @@ canvas.create_window(700,250,window=exit_button)
 
 root.mainloop()
 
+
 nvar=len(vars)
 
+if seleccion=="excel":
+
+    df = pd.read_excel(str(loc))
+
+if seleccion=="csv":
+
+    df = pd.read_csv(str(loc))
 
 
-df = pd.read_excel(str(loc))
+
+
 
 errores=[]
 for j in range(int(df.shape[0])):
@@ -125,4 +148,10 @@ print(errores)
 
 df['Df']=errores
 
-df.to_excel("output.xlsx")
+if seleccion=="excel":
+    df.to_excel("output.xlsx")
+
+if seleccion=="csv":
+    df.to_csv("output.csv")
+
+
