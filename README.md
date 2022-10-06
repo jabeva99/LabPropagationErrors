@@ -51,7 +51,7 @@ This is a very simple program so we need to be careful with our inputs. I'll be 
 
 Here, we input the name of out excel file (including the .xlsx part). If we only input the name and not the path, it is very important to have the excel file in the same folder as the .py or .exe .
 
-Also, the file should only contain the values of the measured variables and its errors displayed in the following way:
+Also, the file should have a first row indicating the name of the variables (this row will be ignored) and then it should only contain the values of the measured variables and its errors displayed in the following way:
 
 first, the variable and then it's error, then we can procedure with the next variable, so if we have for example variables X,Y and Z, the scheme of the excel columns should be
 * X dX Y dY Z dZ
