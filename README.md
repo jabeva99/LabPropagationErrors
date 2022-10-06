@@ -37,7 +37,7 @@ git clone https://github.com/jabeva99/labpropagationerrors/
 And just run the script with 
 
 ```
-python labpropagationerrors
+python LabPropagationErrors.py
 ```
 
 If you want the .exe version for Windows, just go to the Releases tab and download the .zip file
