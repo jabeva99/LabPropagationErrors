@@ -22,7 +22,7 @@ def getloc():
     loc=entryfile.get()
     print(loc)
 
-buttonfile=tk.Button(root, height=1, width=18, text="Añadir nombre fichero", command=lambda:getloc())
+buttonfile=tk.Button(root, height=1, width=18, text="Add file name", command=lambda:getloc())
 
 canvas.create_window(300,100,window=buttonfile)
 
@@ -34,7 +34,7 @@ def getvars():
     vars.append(sym.Symbol(entryvar.get()))
 
     entryvar.delete(0,tk.END)
-buttonvar=tk.Button(root, height=1, width=15, text="Añadir variable", command=lambda:getvars())
+buttonvar=tk.Button(root, height=1, width=15, text="Add variable", command=lambda:getvars())
 
 canvas.create_window(700,100,window=buttonvar)
 
@@ -48,7 +48,7 @@ def getfunc():
     func=entryfunc.get()
     print(func)
 
-buttonfunc=tk.Button(root, height=1, width=15, text="Añadir funcion", command=lambda:getfunc())
+buttonfunc=tk.Button(root, height=1, width=15, text="Add function", command=lambda:getfunc())
 
 canvas.create_window(300,300,window=buttonfunc)
 
@@ -71,7 +71,7 @@ canvas.create_window(700,250,window=combo)
 
 combo['values']=opciones
 
-buttonfich=tk.Button(root, height=1, width=15, text="Añadir formato", command=lista_selec)
+buttonfich=tk.Button(root, height=1, width=15, text="Add format", command=lista_selec)
 
 canvas.create_window(700,300,window=buttonfich)
 
@@ -84,7 +84,7 @@ def execute():
 
 
 # Button for execute
-exit_button = tk.Button(root, text="Ejecutar", command=execute)
+exit_button = tk.Button(root, text="Execute", command=execute)
 canvas.create_window(450,450,window=exit_button)
 
 
