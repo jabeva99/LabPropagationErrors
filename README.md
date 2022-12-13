@@ -49,25 +49,25 @@ This is a very simple program so we need to be careful with our inputs. I'll be 
 
 ### Name of file
 
-Here, we input the name of out excel file (including the .xlsx part). If we only input the name and not the path, it is very important to have the excel file in the same folder as the .py or .exe .
+Here, we input the name of our excel file (including the .xlsx part). If we only input the name and not the path, it is very important to have the excel file in the same folder as the .py or .exe .
 
-Also, the file should have a first row indicating the name of the variables (this row will be ignored) and then it should only contain the values of the measured variables and its errors displayed in the following way:
+Also, the file should have a first row indicating the name of the variables (this row will be ignored) and then it should only contain the values of the measured variables and their errors displayed in the following way:
 
-first, the variable and then it's error, then we can procedure with the next variable, so if we have for example variables X,Y and Z, the scheme of the excel columns should be
+first, the variable and then its error, then we can procede with the next variable, so if we have for example variables X,Y and Z, the scheme of the excel columns should be
 * X dX Y dY Z dZ
 
 In case a variable doesn't have a measure error, the error column should  be filled with zeros.
 
 ### Variables
 
-Here, we input the same name of the variable that we are going to input on the formula box. The inputs are one by one until every variable has been entered.
+Here, we input the same name of the variable that we are going to input on the formula box. The inputs are introduced one by one until every variable has been entered.
 
 ### Function expression
 
 
-Here, we input the expression of the function of the indirect measurement. It is very important that we input the function following the python syntax, which is nothing especial but replacing ^ with ** (example x squared would be x**2).
+Here, we input the expression of the function of the indirect measurement. It is very important that we input the function following the python syntax, which is nothing special but replacing ^ with ** (example x squared would be x**2).
 
-Also, when using a certain function like the arcotangent, we need to use the syntax of sympy, since it its the package used for the derivations. They are quite intuitive, for further information check https://docs.sympy.org/latest/modules/functions/index.html
+Also, when using a certain function like the arcotangent, we need to use the syntax of sympy, since it is the package used for the derivations. They are quite intuitive, for further information check https://docs.sympy.org/latest/modules/functions/index.html
 
 
 
